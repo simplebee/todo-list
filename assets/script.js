@@ -10,9 +10,16 @@ $('.list').on('click', '.list__bin', function(event) {
 });
 
 $('.list__input').on('keypress', function(event) {
-  if (event.which === 13) {
-    var inputText = $(this).val();
-    $('.list').append('<li class="list__item"><span class="list__bin"><i class="fa fa-trash"></i></span>' + inputText + '</li>');
+  var inputText = $(this).val();
+  var $listItem = $('<li class="list__item"><span class="list__bin"><i class="fa fa-trash"></i></span>' + inputText + '</li>');
+  if (event.which === 13 && inputText !== "") {
+    $listItem.hide().appendTo('.list').fadeIn();
     $(this).val('');
   }
+});
+
+$('.title__button').on('click', function() {
+  $('.list__input').fadeToggle();
+  $(this).toggleClass('fa-plus');
+  $(this).toggleClass('fa-minus');
 });
