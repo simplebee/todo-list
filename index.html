@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Todo List</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/style.css">
   <script src="lib/jquery-3.2.0.min.js"></script>
 </head>
 <body>
-  <h1 class="title">To-do list</h1>
-  <input class="list__input" type="text">
-  <ul class="list">
-    <li class="list__item"><span class="list__bin">x </span>item 1</li>
-    <li class="list__item"><span class="list__bin">x </span>item 2</li>
-    <li class="list__item"><span class="list__bin">x </span>item 3</li>
-  </ul>
+  <div class="container">
+    <h1 class="title">To-do list<i class="fa fa-plus"></i></h1>
+    <input class="list__input" type="text" placeholder="Add new todo">
+    <ul class="list">
+      <li class="list__item"><span class="list__bin"><i class="fa fa-trash"></i></span>item 1</li>
+      <li class="list__item"><span class="list__bin"><i class="fa fa-trash"></i></span>item 2</li>
+      <li class="list__item"><span class="list__bin"><i class="fa fa-trash"></i></span>item 3</li>
+    </ul>
+  </div>
   <script src="assets/script.js"></script>
 </body>
 </html>
