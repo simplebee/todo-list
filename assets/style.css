@@ -1,14 +1,17 @@
 html,
 body,
-h1 {
+h1,
+ul {
   margin: 0;
+  padding: 0;
 }
 
 body {
   /* uiGradient */
-  background: #085078;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #323232;
 }
 
 .container {
@@ -18,7 +21,7 @@ body {
 }
 
 .title {
-  background: lightblue;
+  background: #6555a2;
   color: white;
   font-size: 24px;
   font-weight: normal;
@@ -26,6 +29,25 @@ body {
   padding: 10px 20px;
 }
 
+.fa-plus {
+  float: right;
+}
+
+.list {
+  list-style: none;
+}
+
+.list__item {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.list__item:nth-of-type(2n) {
+  background: #f2f2f2;
+}
+
 .list__item_done {
+  color: #797979;
   text-decoration: line-through;
 }
