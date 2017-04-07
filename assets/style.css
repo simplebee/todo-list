@@ -13,9 +13,11 @@ body {
   background: linear-gradient(to left, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #323232;
   font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container {
+  background: white;
   width: 400px;
   margin: 100px auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -57,7 +59,6 @@ body {
 }
 
 .list__item {
-  background: white;
   height: 40px;
   line-height: 40px;
 }
